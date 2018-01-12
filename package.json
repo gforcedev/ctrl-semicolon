@@ -2,7 +2,7 @@
     "name": "ctrl-semicolon",
     "displayName": "Ctrl-Semicolon",
     "description": "Semicolon insertion extension",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "publisher": "Gforcedev",
     "engines": {
         "vscode": "^1.19.0"
