@@ -11,14 +11,32 @@
         "Other"
     ],
     "activationEvents": [
-        "onCommand:extension.sayHello"
+        "onCommand:extension.insertSemiColon"
     ],
     "main": "./out/extension",
     "contributes": {
         "commands": [
             {
-                "command": "extension.sayHello",
-                "title": "Hello World"
+                "command": "extension.insertSemiColon",
+                "title": "Insert Semicolon at end of current line"
+            },
+            {
+                "command": "extension.removeSemiColon",
+                "title": "Remove Semicolon at end of current line"
+            }
+        ],
+        "keybindings": [
+            {
+                "command": "extension.insertSemiColon",
+                "key": "ctrl+;",
+                "mac": "cmd+;",
+                "when": "editorTextFocus"
+            },
+            {
+                "command": "extension.removeSemiColon",
+                "key": "ctrl+shift+;",
+                "mac": "cmd+shift+;",
+                "when": "editorTextFocus"
             }
         ]
     },
